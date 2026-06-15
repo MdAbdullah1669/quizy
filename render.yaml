@@ -1,0 +1,22 @@
+# Render service configuration for Quizy backend
+# Replace placeholders as needed (repo, branch, region).
+services:
+  - type: web
+    name: quizy-backend
+    env: node
+    plan: free
+    branch: main
+    rootDirectory: backend
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
+    autoDeploy: true
+    pullRequestPreviews: false
+    envVars:
+      - key: MONGODB_URI
+      - key: JWT_SECRET
+      - key: CLIENT_URL
+      - key: EMAIL_HOST
+      - key: EMAIL_USER
+      - key: EMAIL_PASS
+      - key: EMAIL_FROM

@@ -1,9 +1,17 @@
 import axios from "axios";
 
+// Resolve base URL priority:
+// 1. VITE_API_BASE_URL (set in Netlify or local .env)
+// 2. When built for production, default to deployed backend URL
+// 3. Fallback to local API for development
+const resolvedBase =
+  (import.meta.env && import.meta.env.VITE_API_BASE_URL) ||
+  (import.meta.env && import.meta.env.MODE === "production"
+    ? "https://quizy-server-side.onrender.com/api"
+    : "http://localhost:5000/api");
+
 const api = axios.create({
-  baseURL:
-    (import.meta.env && import.meta.env.VITE_API_BASE_URL) ||
-    "http://localhost:5000/api",
+  baseURL: resolvedBase,
   headers: { "Content-Type": "application/json" },
 });
 
