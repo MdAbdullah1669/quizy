@@ -9,6 +9,11 @@ export default function QuizzesTable({
   onCopy = () => {},
   onMonitor = () => {},
   onReport = () => {},
+  // student view: show a single Attend/Start button
+  studentView = false,
+  onAttend = () => {},
+  // show joinCode (enroll key) when available and not the reserved open code
+  showJoinKey = false,
 }) {
   return (
     <div>
@@ -39,41 +44,59 @@ export default function QuizzesTable({
                 </div>
               </div>
               <div className="flex items-center gap-2 flex-wrap">
-                {typeof onManage === "function" ? (
+                {showJoinKey && (
+                  <div className="text-sm text-gray-600 mr-2">
+                    {q.joinCode && String(q.joinCode).trim() !== "1234"
+                      ? `Key: ${q.joinCode}`
+                      : ""}
+                  </div>
+                )}
+                {studentView ? (
                   <button
-                    className="px-2 py-1 bg-gray-100 text-sm rounded hover:bg-gray-200"
-                    onClick={() => onManage(q)}
+                    className="px-3 py-1 bg-green-600 text-white rounded-md text-sm"
+                    onClick={() => onAttend(q)}
                   >
-                    Manage
+                    Attend Quiz
                   </button>
-                ) : null}
-                <button
-                  className="px-2 py-1 bg-gray-100 text-sm rounded hover:bg-gray-200"
-                  onClick={() => onQuestions(q)}
-                >
-                  Questions
-                </button>
-                {/* Edit and Copy removed per UX request */}
-                {typeof onMonitor === "function" ? (
-                  <button
-                    className="px-2 py-1 bg-white border border-indigo-100 text-sm rounded hover:bg-indigo-50"
-                    onClick={() => onMonitor(q)}
-                  >
-                    Monitor
-                  </button>
-                ) : null}
-                <button
-                  className="px-2 py-1 bg-white border border-gray-200 text-sm rounded hover:bg-gray-50"
-                  onClick={() => onReport(q)}
-                >
-                  Reports
-                </button>
-                <button
-                  className="px-2 py-1 bg-white border border-red-200 text-red-600 text-sm rounded hover:bg-red-50"
-                  onClick={() => onDelete(q)}
-                >
-                  Delete
-                </button>
+                ) : (
+                  <>
+                    {typeof onManage === "function" ? (
+                      <button
+                        className="px-2 py-1 bg-gray-100 text-sm rounded hover:bg-gray-200"
+                        onClick={() => onManage(q)}
+                      >
+                        Manage
+                      </button>
+                    ) : null}
+                    <button
+                      className="px-2 py-1 bg-gray-100 text-sm rounded hover:bg-gray-200"
+                      onClick={() => onQuestions(q)}
+                    >
+                      Questions
+                    </button>
+                    {/* Edit and Copy removed per UX request */}
+                    {typeof onMonitor === "function" ? (
+                      <button
+                        className="px-2 py-1 bg-white border border-indigo-100 text-sm rounded hover:bg-indigo-50"
+                        onClick={() => onMonitor(q)}
+                      >
+                        Monitor
+                      </button>
+                    ) : null}
+                    <button
+                      className="px-2 py-1 bg-white border border-gray-200 text-sm rounded hover:bg-gray-50"
+                      onClick={() => onReport(q)}
+                    >
+                      Reports
+                    </button>
+                    <button
+                      className="px-2 py-1 bg-white border border-red-200 text-red-600 text-sm rounded hover:bg-red-50"
+                      onClick={() => onDelete(q)}
+                    >
+                      Delete
+                    </button>
+                  </>
+                )}
               </div>
             </li>
           ))}

@@ -20,6 +20,7 @@ export default function QuizEditor() {
           description: "",
           subject: "",
           grade: "",
+          joinCode: "",
           timeLimit: 0,
           attemptsAllowed: "single",
           visibleFrom: "",
@@ -111,6 +112,7 @@ export default function QuizEditor() {
         subject: quiz.subject,
         title: quiz.title,
         description: quiz.description,
+        joinCode: quiz.joinCode || undefined,
         // frontend input is minutes; backend stores seconds — convert to seconds
         timeLimit: (Number(quiz.timeLimit) || 0) * 60,
         visibleFrom: quiz.visibleFrom
@@ -142,6 +144,7 @@ export default function QuizEditor() {
         shuffleQuestions: !!quiz.shuffleQuestions,
         showAnswersAfterSubmission: !!quiz.showAnswersAfterSubmission,
         access: quiz.access || "public",
+        joinCode: quiz.joinCode || undefined,
         allowedList: Array.isArray(quiz.allowedList)
           ? quiz.allowedList
           : typeof quiz.allowedList === "string"
@@ -258,6 +261,22 @@ export default function QuizEditor() {
                 }
                 className="w-full border border-gray-300 rounded-md px-2 py-1"
               />
+            </div>
+            <div>
+              <label className="block text-sm font-medium text-black">
+                Join Code (optional)
+              </label>
+              <input
+                value={quiz?.joinCode || ""}
+                onChange={(e) =>
+                  setQuiz((q) => ({ ...q, joinCode: e.target.value }))
+                }
+                placeholder="e.g. 6-digit code or leave empty for public"
+                className="w-full border border-gray-300 rounded-md px-2 py-1"
+              />
+              <p className="text-xs text-gray-500 mt-1">
+                If provided, students must supply this code to access the quiz.
+              </p>
             </div>
             <div className="grid grid-cols-2 gap-3">
               <div>

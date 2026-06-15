@@ -26,6 +26,26 @@ export default function TakeQuiz() {
         setQuiz(qRes.data.quiz || qRes.data);
         setQuestions(qsRes.data.questions || qsRes.data.questions || []);
       } catch (err) {
+        // If the quiz requires a join code, prompt the user
+        const status = err?.response?.status;
+        const msg = err?.response?.data?.message || "";
+        if (status === 403 && /join code/i.test(msg)) {
+          // Try the reserved open code '1234' automatically first
+          try {
+            const [qRes, qsRes] = await Promise.all([
+              api.get(`/quizzes/${id}?code=1234`),
+              api.get(`/questions/quiz/${id}`),
+            ]);
+            setQuiz(qRes.data.quiz || qRes.data);
+            setQuestions(qsRes.data.questions || qsRes.data.questions || []);
+            setError(null);
+            return;
+          } catch (e) {
+            // Fall through to show join-code prompt
+          }
+          setError("This quiz requires a join code. Enter code to continue.");
+          return;
+        }
         console.error(err);
       } finally {
         setLoading(false);
@@ -33,6 +53,27 @@ export default function TakeQuiz() {
     };
     load();
   }, [id]);
+
+  const [joinCode, setJoinCode] = useState("");
+
+  const submitJoinCode = async () => {
+    setLoading(true);
+    setError(null);
+    try {
+      const [qRes, qsRes] = await Promise.all([
+        api.get(`/quizzes/${id}?code=${encodeURIComponent(joinCode)}`),
+        api.get(`/questions/quiz/${id}`),
+      ]);
+      setQuiz(qRes.data.quiz || qRes.data);
+      setQuestions(qsRes.data.questions || qsRes.data.questions || []);
+      setError(null);
+    } catch (err) {
+      const msg = err?.response?.data?.message || err.message || "Failed";
+      setError(msg);
+    } finally {
+      setLoading(false);
+    }
+  };
 
   const submitAnswers = async () => {
     const payload = {
@@ -134,6 +175,7 @@ export default function TakeQuiz() {
         setCurrentIndex(0);
       } else {
         const payload = { quiz: id };
+        if (joinCode) payload.joinCode = joinCode;
         if (guestName) payload.guestName = guestName;
         const res = await api.post(`/results/start`, payload);
         const draft = res.data.result || res.data;
@@ -175,6 +217,28 @@ export default function TakeQuiz() {
       {error && (
         <div className="max-w-7xl mx-auto mb-4 p-3 bg-red-50 text-red-700 rounded">
           {error}
+        </div>
+      )}
+      {/* Join code prompt */}
+      {error && /join code/i.test(error) && (
+        <div className="max-w-md mx-auto mb-6 p-4 bg-white border rounded">
+          <label className="block text-sm font-medium text-black mb-2">
+            Enter join code
+          </label>
+          <div className="flex gap-2">
+            <input
+              value={joinCode}
+              onChange={(e) => setJoinCode(e.target.value)}
+              className="flex-1 border rounded px-2 py-1"
+              placeholder="Enter code provided by instructor"
+            />
+            <button
+              onClick={submitJoinCode}
+              className="px-3 py-1 bg-black text-white rounded"
+            >
+              Submit
+            </button>
+          </div>
         </div>
       )}
       {/* Header with title, progress and timer/submit */}

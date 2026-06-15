@@ -13,7 +13,14 @@ export default function ResultsHistory() {
           api.get("/results/me"),
           api.get("/results/me/summary"),
         ]);
-        setResults(rRes.data.results || []);
+        const list = rRes.data.results || [];
+        // Sort newest first by takenAt (fallback to createdAt)
+        list.sort((a, b) => {
+          const ta = new Date(b.takenAt || b.createdAt || 0).getTime();
+          const tb = new Date(a.takenAt || a.createdAt || 0).getTime();
+          return ta - tb;
+        });
+        setResults(list);
         setSummary(sRes.data.summary || null);
       } catch (err) {
         console.error("Failed to load results:", err);

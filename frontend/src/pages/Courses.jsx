@@ -22,6 +22,7 @@ export default function Courses() {
     error: null,
     loading: false,
   });
+  const [deleting, setDeleting] = useState(null);
 
   useEffect(() => {
     if (!user) return;
@@ -94,12 +95,7 @@ export default function Courses() {
           >
             Refresh
           </button>
-          <button
-            onClick={() => navigate("/")}
-            className="px-3 py-1 bg-black text-white rounded-md"
-          >
-            Back
-          </button>
+          {/* Back button removed per UX request */}
         </div>
       </div>
 
@@ -160,7 +156,6 @@ export default function Courses() {
                       <span>
                         {s.createdBy?.name || s.createdBy?.identifier || "—"}
                       </span>
-                    
                     </div>
                   </td>
                   {user && user.role === "teacher" && (
@@ -217,13 +212,53 @@ export default function Courses() {
                         // If visiting the enrolled-only view as a student, show black view button
                         showEnrolledOnly && user && user.role === "student"
                           ? "text-sm px-2 py-1 bg-black text-white rounded-md"
-                          : isOwner || s.isEnrolled
+                          : isOwner ||
+                              s.isEnrolled ||
+                              (user && user.role === "student" && !s.enrollKey)
                             ? "text-sm px-2 py-1 bg-green-600 text-white rounded-md"
                             : "text-sm px-2 py-1 border rounded-md"
                       }`}
                     >
                       View Course
                     </button>
+                    {user && user.role === "teacher" && isOwner && (
+                      <button
+                        onClick={async () => {
+                          const ok = window.confirm(
+                            `Delete course "${s.name}"? This cannot be undone.`,
+                          );
+                          if (!ok) return;
+                          try {
+                            setDeleting(s._id);
+                            await api.delete(
+                              `/subjects/${s._id}`,
+                              token
+                                ? {
+                                    headers: {
+                                      Authorization: `Bearer ${token}`,
+                                    },
+                                  }
+                                : undefined,
+                            );
+                            setSubjects((prev) =>
+                              prev.filter((x) => x._id !== s._id),
+                            );
+                          } catch (err) {
+                            setError(
+                              err?.response?.data?.message ||
+                                err.message ||
+                                "Delete failed",
+                            );
+                          } finally {
+                            setDeleting(null);
+                          }
+                        }}
+                        className="ml-2 text-sm px-2 py-1 bg-red-600 text-white rounded-md"
+                        disabled={deleting === s._id}
+                      >
+                        {deleting === s._id ? "Deleting..." : "Delete"}
+                      </button>
+                    )}
                   </td>
                 </tr>
               );
@@ -267,7 +302,10 @@ export default function Courses() {
               />
             </div>
             <div className="mb-3">
-              <label className="block text-sm text-gray-700">Enroll Key</label>
+              <label className="block text-sm text-gray-700">
+                Enroll Key{" "}
+                <span className="text-xs text-gray-500">(optional)</span>
+              </label>
               <input
                 className="w-full border px-2 py-1 rounded-md"
                 value={form.enrollKey}
@@ -275,6 +313,9 @@ export default function Courses() {
                   setForm((f) => ({ ...f, enrollKey: e.target.value }))
                 }
               />
+              <p className="text-xs text-gray-500 mt-1">
+                If left empty the course will be openly joinable by students.
+              </p>
             </div>
             <div className="flex justify-end gap-2">
               <button
@@ -286,16 +327,21 @@ export default function Courses() {
               </button>
               <button
                 onClick={async () => {
-                  if (!form.name || !form.code || !form.enrollKey)
-                    return setError("All fields required");
+                  if (!form.name || !form.code)
+                    return setError("Name and code required");
                   setCreating(true);
                   setError(null);
                   try {
                     const payload = {
                       name: form.name,
                       code: form.code,
-                      enrollKey: form.enrollKey,
                     };
+                    if (
+                      form.enrollKey &&
+                      String(form.enrollKey).trim() !== ""
+                    ) {
+                      payload.enrollKey = form.enrollKey;
+                    }
                     const res = await api.post(
                       "/subjects",
                       payload,
@@ -338,23 +384,36 @@ export default function Courses() {
             <h3 className="text-lg font-semibold mb-4">
               Enroll in {enrollModal.subject?.name}
             </h3>
-            <p className="text-sm text-gray-600 mb-3">
-              Enter the enroll key provided by the instructor to join this
-              course.
-            </p>
-            {enrollModal.error && (
-              <div className="text-red-600 mb-2">{enrollModal.error}</div>
+            {enrollModal.subject && !enrollModal.subject.enrollKey ? (
+              <p className="text-sm text-gray-600 mb-3">
+                This course is open — click Join to enroll without a key.
+              </p>
+            ) : (
+              <>
+                <p className="text-sm text-gray-600 mb-3">
+                  Enter the enroll key provided by the instructor to join this
+                  course.
+                </p>
+                {enrollModal.error && (
+                  <div className="text-red-600 mb-2">{enrollModal.error}</div>
+                )}
+                <div className="mb-3">
+                  <label className="block text-sm text-gray-700">
+                    Enroll Key
+                  </label>
+                  <input
+                    className="w-full border px-2 py-1 rounded-md"
+                    value={enrollModal.enrollKey}
+                    onChange={(e) =>
+                      setEnrollModal((m) => ({
+                        ...m,
+                        enrollKey: e.target.value,
+                      }))
+                    }
+                  />
+                </div>
+              </>
             )}
-            <div className="mb-3">
-              <label className="block text-sm text-gray-700">Enroll Key</label>
-              <input
-                className="w-full border px-2 py-1 rounded-md"
-                value={enrollModal.enrollKey}
-                onChange={(e) =>
-                  setEnrollModal((m) => ({ ...m, enrollKey: e.target.value }))
-                }
-              />
-            </div>
             <div className="flex justify-end gap-2">
               <button
                 onClick={() =>
@@ -375,9 +434,13 @@ export default function Courses() {
                 onClick={async () => {
                   setEnrollModal((m) => ({ ...m, loading: true, error: null }));
                   try {
+                    const body = {};
+                    if (enrollModal.subject && enrollModal.subject.enrollKey) {
+                      body.enrollKey = enrollModal.enrollKey;
+                    }
                     await api.post(
                       `/subjects/${enrollModal.subject._id}/enroll`,
-                      { enrollKey: enrollModal.enrollKey },
+                      body,
                       token
                         ? { headers: { Authorization: `Bearer ${token}` } }
                         : undefined,
@@ -409,7 +472,11 @@ export default function Courses() {
                 className="px-3 py-1 bg-black text-white rounded-md"
                 disabled={enrollModal.loading}
               >
-                {enrollModal.loading ? "Enrolling..." : "Enroll"}
+                {enrollModal.loading
+                  ? "Enrolling..."
+                  : enrollModal.subject && !enrollModal.subject.enrollKey
+                    ? "Join"
+                    : "Enroll"}
               </button>
             </div>
           </div>

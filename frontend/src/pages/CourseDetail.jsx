@@ -246,6 +246,9 @@ export default function CourseDetail() {
                 onMonitor={(q) => navigate(`/teacher/monitor/${q._id || q.id}`)}
                 onDelete={(q) => deleteQuiz(q)}
                 onReport={(q) => navigate(`/teacher/reports/${q._id || q.id}`)}
+                studentView={user && user.role !== "teacher"}
+                onAttend={(q) => navigate(`/take/${q._id || q.id}`)}
+                showJoinKey={user && user.role === "teacher"}
               />
             )}
           </>

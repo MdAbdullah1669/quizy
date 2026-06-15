@@ -114,8 +114,11 @@ const Navbar = () => {
       navigation.push({ name: "My Courses", href: "/teacher/courses" });
     }
     if (user.role === "student") {
-      navigation.push({ name: "My Courses", href: "/courses?enrolled=true" });
-      navigation.push({ name: "All Courses", href: "/courses" });
+      navigation.push({
+        name: "My Courses",
+        href: "/students/courses?enrolled=true",
+      });
+      navigation.push({ name: "All Courses", href: "/students/courses" });
       navigation.push({ name: "Results", href: "/results" });
     }
   }
@@ -198,7 +201,7 @@ const Navbar = () => {
                                 navigate(
                                   isTeacher
                                     ? `/teacher/courses/${r._id}`
-                                    : `/courses/${r._id}`,
+                                    : `/students/courses/${r._id}`,
                                 );
                               } else {
                                 navigate(
