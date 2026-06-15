@@ -11,7 +11,7 @@ const Footer = () => {
           {/* Column 1 - Logo & Social */}
           <div className="space-y-4">
             <Link to="/" className="block">
-              <img src={logo} alt="Qizy logo" className="h-20 -mt-2 w-auto" />
+              <img src={logo} alt="Quizy logo" className="h-20 -mt-2 w-auto" />
             </Link>
             <p className="text-gray-600 text-sm leading-relaxed">
               An Online Quiz Platform for creating, taking, and reviewing timed
@@ -48,10 +48,10 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Column 2 - Product */}
+          {/* Column 2 - Platform */}
           <div>
             <h3 className="text-sm font-semibold text-black uppercase tracking-wider mb-4">
-              Product
+              Platform
             </h3>
             <ul className="space-y-3">
               <li>
@@ -83,16 +83,16 @@ const Footer = () => {
                   to="/about"
                   className="text-gray-600 hover:text-black transition-colors text-sm"
                 >
-                  About Us
+                  About
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Column 3 - Resources */}
+          {/* Column 3 - Explore */}
           <div>
             <h3 className="text-sm font-semibold text-black uppercase tracking-wider mb-4">
-              Resources
+              Explore
             </h3>
             <ul className="space-y-3">
               <li>
@@ -112,12 +112,12 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <a
-                  href="/README.md"
+                <Link
+                  to="/README.md"
                   className="text-gray-600 hover:text-black transition-colors text-sm"
                 >
                   Documentation
-                </a>
+                </Link>
               </li>
               <li>
                 <Link
@@ -137,36 +137,36 @@ const Footer = () => {
             </h3>
             <ul className="space-y-3">
               <li>
-                <a
-                  href="/faq"
+                <Link
+                  to="/faq"
                   className="text-gray-600 hover:text-black transition-colors text-sm"
                 >
                   FAQ
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/contact"
+                <Link
+                  to="/contact"
                   className="text-gray-600 hover:text-black transition-colors text-sm"
                 >
                   Contact Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/privacy"
+                <Link
+                  to="/privacy"
                   className="text-gray-600 hover:text-black transition-colors text-sm"
                 >
                   Privacy Policy
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/terms"
+                <Link
+                  to="/terms"
                   className="text-gray-600 hover:text-black transition-colors text-sm"
                 >
                   Terms of Service
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -176,7 +176,7 @@ const Footer = () => {
         <div className="mt-12 pt-8 border-t border-gray-200">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-gray-600">
-              &copy; {new Date().getFullYear()} Quizly. All rights reserved.
+              &copy; {new Date().getFullYear()} Quizy. All rights reserved.
             </p>
             <p className="text-sm text-gray-600">
               Built with ❤️ by{" "}

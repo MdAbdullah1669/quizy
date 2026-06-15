@@ -120,6 +120,11 @@ const Navbar = () => {
     }
   }
 
+  const guestNav = [
+    { name: "About", to: "/about" },
+    { name: "Contact us", to: "/contact" },
+  ];
+
   return (
     <nav className="bg-white shadow-lg sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -229,6 +234,26 @@ const Navbar = () => {
               </div>
             )}
           </div>
+
+          {/* center links for unauthenticated users on desktop */}
+          {!user && (
+            <div className="hidden md:flex items-center justify-center flex-1 gap-4">
+              {guestNav.map((g) => {
+                const isActive = location.pathname === g.to;
+                return (
+                  <Link
+                    key={g.to}
+                    to={g.to}
+                    className={`px-4 py-2 text-base font-medium text-black hover:text-gray-700 ${
+                      isActive ? "border-b-2 border-black" : ""
+                    }`}
+                  >
+                    {g.name}
+                  </Link>
+                );
+              })}
+            </div>
+          )}
 
           <div className="hidden md:flex items-center space-x-6">
             {navigation.map((item) => {
@@ -396,6 +421,21 @@ const Navbar = () => {
               <div className="mt-2 border-t pt-2">
                 {!user ? (
                   <>
+                    {guestNav.map((g) => {
+                      const isActive = location.pathname === g.to;
+                      return (
+                        <Link
+                          key={g.to}
+                          to={g.to}
+                          onClick={() => setIsOpen(false)}
+                          className={`block px-3 py-2 text-base text-black text-center ${
+                            isActive ? "border-b-2 border-black" : ""
+                          }`}
+                        >
+                          {g.name}
+                        </Link>
+                      );
+                    })}
                     {location.pathname !== "/login" && (
                       <Link
                         to="/login"

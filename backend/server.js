@@ -46,7 +46,8 @@ const allowedOrigins = new Set();
 const addOrigin = (u) => {
   if (!u) return;
   allowedOrigins.add(u);
-  if (u.includes("localhost")) allowedOrigins.add(u.replace("localhost", "127.0.0.1"));
+  if (u.includes("localhost"))
+    allowedOrigins.add(u.replace("localhost", "127.0.0.1"));
 };
 
 addOrigin(CLIENT_URL);

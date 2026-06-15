@@ -185,7 +185,8 @@ export default function Dashboard() {
                   .filter(
                     (s) =>
                       s &&
-                      (s.createdBy?._id === user._id || s.createdBy === user._id),
+                      (s.createdBy?._id === user._id ||
+                        s.createdBy === user._id),
                   )
                   .slice(0, 3)
                   .map((s) => (
@@ -210,7 +211,9 @@ export default function Dashboard() {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {quizzes
                   .filter(
-                    (q) => String(q.createdBy?._id || q.createdBy || "") === String(user._id),
+                    (q) =>
+                      String(q.createdBy?._id || q.createdBy || "") ===
+                      String(user._id),
                   )
                   .sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt))
                   .slice(0, 3)

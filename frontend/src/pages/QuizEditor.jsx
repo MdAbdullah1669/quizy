@@ -397,8 +397,7 @@ export default function QuizEditor() {
         <div>
           <h3 className="font-semibold mb-3">Questions</h3>
           <p className="mb-3 text-gray-700">
-            Use the Questions editor to add MCQ, True/False or Short answer
-            questions.
+            Use the Questions editor to add MCQ or True/False questions.
           </p>
           {quiz && quiz._id ? (
             <div className="space-y-3">

@@ -67,8 +67,6 @@ function QuestionForm({ onSubmit, initial = null }) {
         );
         return;
       }
-    } else if (type === "short") {
-      // answerText optional
     }
 
     if (Number(points) < 1 || Number(points) > 100) {
@@ -97,8 +95,6 @@ function QuestionForm({ onSubmit, initial = null }) {
           ? options
           : [{ text: "False" }, { text: "True" }];
       payload.correctIndex = Number(correctIndex);
-    } else if (type === "short") {
-      payload.answerText = answerText;
     }
 
     onSubmit(payload);
@@ -134,7 +130,6 @@ function QuestionForm({ onSubmit, initial = null }) {
         >
           <option value="mcq">Multiple Choice (MCQ)</option>
           <option value="tf">True / False</option>
-          <option value="short">Short Answer</option>
         </select>
 
         {type === "mcq" && (
@@ -202,19 +197,6 @@ function QuestionForm({ onSubmit, initial = null }) {
                 True
               </label>
             </div>
-          </div>
-        )}
-
-        {type === "short" && (
-          <div className="mt-3">
-            <label className="block text-sm font-medium text-black">
-              Expected Answer (optional)
-            </label>
-            <input
-              value={answerText}
-              onChange={(e) => setAnswerText(e.target.value)}
-              className="w-full border border-gray-300 rounded-md px-2 py-1"
-            />
           </div>
         )}
       </div>
@@ -420,9 +402,7 @@ export default function ManageQuestions() {
                             Correct: {q.correctIndex === 1 ? "True" : "False"}
                           </div>
                         )}
-                        {q.type === "short" && (
-                          <div>Expected answer: {q.answerText || "—"}</div>
-                        )}
+                        {/* Short answer type removed; only MCQ and TF shown */}
                       </div>
                     </div>
                     <div className="flex flex-col items-end gap-2 ml-4">
