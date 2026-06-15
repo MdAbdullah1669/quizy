@@ -177,212 +177,50 @@ export default function Dashboard() {
         </header>
 
         {user && user.role === "teacher" ? (
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-            <div className="lg:col-span-2">
-              <section className="mb-8">
-                <div className="flex items-center justify-between mb-4">
-                  <h2 className="text-xl font-semibold">Your Courses</h2>
-                  <div className="flex items-center gap-3">
-                    <button
-                      onClick={() => navigate("/teacher/courses")}
-                      className="text-sm text-gray-600"
-                    >
-                      View all
-                    </button>
-                  </div>
-                </div>
-
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                  {subjects.length === 0 && (
-                    <div className="col-span-full p-6 bg-white rounded shadow">
-                      No courses available yet.
-                    </div>
-                  )}
-
-                  {subjects
-                    .filter(
-                      (s) =>
-                        // guard for ownership — backend returns only teacher's subjects when queried with teacherId
-                        s &&
-                        (s.createdBy?._id === user._id ||
-                          s.createdBy === user._id),
-                    )
-                    .slice(0, 3)
-                    .map((s) => (
-                      <div key={s._id} className="p-4 bg-white rounded shadow">
-                        <h3 className="font-semibold text-black">{s.name}</h3>
-                        <p className="text-sm text-gray-600">{s.code}</p>
-                        <div className="mt-3">
-                          <button
-                            onClick={() =>
-                              navigate(`/teacher/courses/${s._id}`)
-                            }
-                            className="px-3 py-1 bg-black text-white rounded-md"
-                          >
-                            Manage Course
-                          </button>
-                        </div>
-                      </div>
-                    ))}
-                </div>
-              </section>
-
-              <section className="mb-8">
-                <div className="flex items-center justify-between mb-4">
-                  <h2 className="text-xl font-semibold">Your Quizzes</h2>
-                  <div className="flex items-center gap-3">
-                    <button
-                      onClick={() => navigate("/teacher/create")}
-                      className="px-3 py-1 bg-black text-white rounded-md"
-                    >
-                      Create Quiz
-                    </button>
-                    <button
-                      onClick={() => navigate("/teacher/quizzes")}
-                      className="text-sm text-gray-600"
-                    >
-                      View all
-                    </button>
-                  </div>
-                </div>
-
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                  {quizzes.length === 0 && (
-                    <div className="col-span-full p-6 bg-white rounded shadow">
-                      No quizzes available yet.
-                    </div>
-                  )}
-
-                  {quizzes
-                    .filter(
-                      (q) =>
-                        String(q.createdBy?._id || q.createdBy || "") ===
-                        String(user._id),
-                    )
-                    .sort(
-                      (a, b) => new Date(b.createdAt) - new Date(a.createdAt),
-                    )
-                    .slice(0, 3)
-                    .map((q) => (
-                      <div key={q._id} className="">
-                        <QuizCard quiz={q} onStart={() => handleStart(q)} />
-                      </div>
-                    ))}
-                </div>
-              </section>
-            </div>
-
-            <div>
-              <section className="space-y-6">
-                <div className="bg-white rounded shadow p-4">
-                  <h3 className="text-lg font-semibold mb-2">Recent Quizzes</h3>
-                  {quizzes &&
-                  quizzes.filter(
-                    (q) =>
-                      String(q.createdBy?._id || q.createdBy || "") ===
-                      String(user._id),
-                  ).length === 0 ? (
-                    <div className="text-sm text-gray-600">No quizzes yet.</div>
-                  ) : (
-                    <ul className="space-y-3">
-                      {quizzes
-                        .filter(
-                          (q) =>
-                            String(q.createdBy?._id || q.createdBy || "") ===
-                            String(user._id),
-                        )
-                        .sort(
-                          (a, b) =>
-                            new Date(b.createdAt) - new Date(a.createdAt),
-                        )
-                        .slice(0, 6)
-                        .map((q) => (
-                          <li
-                            key={q._id}
-                            className="flex items-center justify-between"
-                          >
-                            <div>
-                              <div className="font-medium text-black">
-                                {q.title}
-                              </div>
-                              <div className="text-xs text-gray-500">
-                                {q.joinCode || "-"} •{" "}
-                                {q.createdAt
-                                  ? new Date(q.createdAt).toLocaleDateString()
-                                  : "-"}
-                              </div>
-                            </div>
-                            <div className="flex items-center gap-2">
-                              <button
-                                onClick={() =>
-                                  navigate(`/teacher/quiz/${q._id}`)
-                                }
-                                className="px-2 py-1 bg-gray-100 text-sm rounded"
-                              >
-                                Manage
-                              </button>
-                              <button
-                                onClick={() =>
-                                  navigate(`/teacher/reports/${q._id}`)
-                                }
-                                className="px-2 py-1 bg-black text-white text-sm rounded"
-                              >
-                                Reports
-                              </button>
-                            </div>
-                          </li>
-                        ))}
-                    </ul>
-                  )}
-                </div>
-
-                <div className="bg-white rounded shadow p-4">
-                  <h3 className="text-lg font-semibold mb-2">Your Courses</h3>
-                  {subjects &&
-                  subjects.filter(
+          <div className="space-y-6">
+            <section>
+              <h2 className="text-xl font-semibold mb-4">Your Courses</h2>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                {subjects
+                  .filter(
                     (s) =>
-                      s.createdBy?._id === user._id || s.createdBy === user._id,
-                  ).length === 0 ? (
-                    <div className="text-sm text-gray-600">No courses yet.</div>
-                  ) : (
-                    <ul className="space-y-3">
-                      {subjects
-                        .filter(
-                          (s) =>
-                            s.createdBy?._id === user._id ||
-                            s.createdBy === user._id,
-                        )
-                        .slice(0, 6)
-                        .map((s) => (
-                          <li
-                            key={s._id}
-                            className="flex items-center justify-between"
-                          >
-                            <div>
-                              <div className="font-medium text-black">
-                                {s.name}
-                              </div>
-                              <div className="text-xs text-gray-500">
-                                {s.code || "-"}
-                              </div>
-                            </div>
-                            <div>
-                              <button
-                                onClick={() =>
-                                  navigate(`/teacher/courses/${s._id}`)
-                                }
-                                className="px-2 py-1 bg-black text-white text-sm rounded"
-                              >
-                                Manage
-                              </button>
-                            </div>
-                          </li>
-                        ))}
-                    </ul>
-                  )}
-                </div>
-              </section>
-            </div>
+                      s &&
+                      (s.createdBy?._id === user._id || s.createdBy === user._id),
+                  )
+                  .slice(0, 3)
+                  .map((s) => (
+                    <div key={s._id} className="p-4 bg-white rounded shadow">
+                      <h3 className="font-semibold text-black">{s.name}</h3>
+                      <p className="text-sm text-gray-600">{s.code}</p>
+                      <div className="mt-3">
+                        <button
+                          onClick={() => navigate(`/teacher/courses/${s._id}`)}
+                          className="px-3 py-1 bg-black text-white rounded-md"
+                        >
+                          Manage Course
+                        </button>
+                      </div>
+                    </div>
+                  ))}
+              </div>
+            </section>
+
+            <section>
+              <h2 className="text-xl font-semibold mb-4">Your Quizzes</h2>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                {quizzes
+                  .filter(
+                    (q) => String(q.createdBy?._id || q.createdBy || "") === String(user._id),
+                  )
+                  .sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt))
+                  .slice(0, 3)
+                  .map((q) => (
+                    <div key={q._id} className="">
+                      <QuizCard quiz={q} onStart={() => handleStart(q)} />
+                    </div>
+                  ))}
+              </div>
+            </section>
           </div>
         ) : (
           <section>
