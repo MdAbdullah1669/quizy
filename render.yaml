@@ -1,5 +1,3 @@
-# Render service configuration for Quizy backend
-# Replace placeholders as needed (repo, branch, region).
 services:
   - type: web
     name: quizy-backend
@@ -12,10 +10,14 @@ services:
     healthCheckPath: /health
     autoDeploy: true
     pullRequestPreviews: false
+    # Environment variables to configure in the Render dashboard
     envVars:
       - key: MONGODB_URI
       - key: JWT_SECRET
+      - key: NODE_ENV
+        value: production
       - key: CLIENT_URL
+        value: https://quizy-online-quize-platfrom.netlify.app
       - key: EMAIL_HOST
       - key: EMAIL_USER
       - key: EMAIL_PASS
