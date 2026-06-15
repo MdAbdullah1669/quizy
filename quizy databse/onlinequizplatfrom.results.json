@@ -1,0 +1,346 @@
+[{
+  "_id": {
+    "$oid": "69eeaa58f528724d52149ada"
+  },
+  "quiz": {
+    "$oid": "69e7a0d1d571ffaeee1df9d8"
+  },
+  "score": 0,
+  "total": 0,
+  "startedAt": {
+    "$date": "2026-04-27T00:14:16.389Z"
+  },
+  "status": "in-progress",
+  "answers": [],
+  "takenAt": {
+    "$date": "2026-04-27T00:14:16.391Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a1322c37ba2b04d5c3634e7"
+  },
+  "quiz": {
+    "$oid": "69ec58e94d9965b3ff3bfc80"
+  },
+  "score": 1,
+  "total": 1,
+  "startedAt": {
+    "$date": "2026-05-24T16:09:39.799Z"
+  },
+  "status": "completed",
+  "answers": [
+    {
+      "question": {
+        "$oid": "69ec59054d9965b3ff3bfc89"
+      },
+      "answerIndex": 0,
+      "_id": {
+        "$oid": "6a1322ca7ba2b04d5c3634f3"
+      }
+    }
+  ],
+  "takenAt": {
+    "$date": "2026-05-24T16:09:46.619Z"
+  },
+  "__v": 1,
+  "duration": 7,
+  "endedAt": {
+    "$date": "2026-05-24T16:09:46.619Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6a2b244f7f1baadde874c1b0"
+  },
+  "quiz": {
+    "$oid": "6a2b1e39336e3bd56c333d82"
+  },
+  "score": 1,
+  "total": 1,
+  "startedAt": {
+    "$date": "2026-06-11T21:10:39.392Z"
+  },
+  "status": "completed",
+  "answers": [
+    {
+      "question": {
+        "$oid": "6a2b1e46336e3bd56c333d8d"
+      },
+      "answerIndex": 0,
+      "_id": {
+        "$oid": "6a2b245a7f1baadde874c1c6"
+      }
+    }
+  ],
+  "takenAt": {
+    "$date": "2026-06-11T21:10:50.967Z"
+  },
+  "__v": 3,
+  "duration": 12,
+  "endedAt": {
+    "$date": "2026-06-11T21:10:50.967Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6a2b25497f1baadde874c1f3"
+  },
+  "quiz": {
+    "$oid": "6a2b1e39336e3bd56c333d82"
+  },
+  "score": 1,
+  "total": 1,
+  "startedAt": {
+    "$date": "2026-06-11T21:14:49.348Z"
+  },
+  "status": "completed",
+  "answers": [
+    {
+      "question": {
+        "$oid": "6a2b1e46336e3bd56c333d8d"
+      },
+      "answerIndex": 0,
+      "_id": {
+        "$oid": "6a2b254f7f1baadde874c1ff"
+      }
+    }
+  ],
+  "takenAt": {
+    "$date": "2026-06-11T21:14:55.585Z"
+  },
+  "__v": 1,
+  "duration": 6,
+  "endedAt": {
+    "$date": "2026-06-11T21:14:55.585Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6a2b255a7f1baadde874c228"
+  },
+  "quiz": {
+    "$oid": "6a2b1e39336e3bd56c333d82"
+  },
+  "score": 0,
+  "total": 1,
+  "startedAt": {
+    "$date": "2026-06-11T21:15:06.829Z"
+  },
+  "status": "completed",
+  "answers": [
+    {
+      "question": {
+        "$oid": "6a2b1e46336e3bd56c333d8d"
+      },
+      "answerIndex": 1,
+      "_id": {
+        "$oid": "6a2b255e7f1baadde874c234"
+      }
+    }
+  ],
+  "takenAt": {
+    "$date": "2026-06-11T21:15:10.053Z"
+  },
+  "__v": 1,
+  "duration": 3,
+  "endedAt": {
+    "$date": "2026-06-11T21:15:10.053Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6a2b256c7f1baadde874c267"
+  },
+  "quiz": {
+    "$oid": "6a2b1e39336e3bd56c333d82"
+  },
+  "score": 0,
+  "total": 0,
+  "startedAt": {
+    "$date": "2026-06-11T21:15:24.754Z"
+  },
+  "status": "in-progress",
+  "answers": [],
+  "takenAt": {
+    "$date": "2026-06-11T21:15:24.754Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a2b26b215361726510456a3"
+  },
+  "quiz": {
+    "$oid": "6a2b1e39336e3bd56c333d82"
+  },
+  "score": 1,
+  "total": 1,
+  "startedAt": {
+    "$date": "2026-06-11T21:20:50.865Z"
+  },
+  "status": "completed",
+  "answers": [
+    {
+      "question": {
+        "$oid": "6a2b1e46336e3bd56c333d8d"
+      },
+      "answerIndex": 0,
+      "_id": {
+        "$oid": "6a2b26b715361726510456af"
+      }
+    }
+  ],
+  "takenAt": {
+    "$date": "2026-06-11T21:20:55.338Z"
+  },
+  "__v": 1,
+  "duration": 4,
+  "endedAt": {
+    "$date": "2026-06-11T21:20:55.338Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6a2b26f5153617265104573e"
+  },
+  "quiz": {
+    "$oid": "6a2b1e39336e3bd56c333d82"
+  },
+  "score": 0,
+  "total": 0,
+  "startedAt": {
+    "$date": "2026-06-11T21:21:57.372Z"
+  },
+  "status": "in-progress",
+  "answers": [],
+  "takenAt": {
+    "$date": "2026-06-11T21:21:57.372Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a2b275f5341579433b86d22"
+  },
+  "quiz": {
+    "$oid": "6a2b1e39336e3bd56c333d82"
+  },
+  "score": 1,
+  "total": 1,
+  "startedAt": {
+    "$date": "2026-06-11T21:23:43.779Z"
+  },
+  "status": "completed",
+  "answers": [
+    {
+      "question": {
+        "$oid": "6a2b1e46336e3bd56c333d8d"
+      },
+      "answerIndex": 0,
+      "_id": {
+        "$oid": "6a2b27665341579433b86d2e"
+      }
+    }
+  ],
+  "takenAt": {
+    "$date": "2026-06-11T21:23:50.719Z"
+  },
+  "__v": 1,
+  "duration": 7,
+  "endedAt": {
+    "$date": "2026-06-11T21:23:50.719Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6a2b2866faa72d77ea981cdc"
+  },
+  "quiz": {
+    "$oid": "6a2b1e39336e3bd56c333d82"
+  },
+  "score": 1,
+  "total": 1,
+  "startedAt": {
+    "$date": "2026-06-11T21:28:06.390Z"
+  },
+  "status": "completed",
+  "answers": [
+    {
+      "question": {
+        "$oid": "6a2b1e46336e3bd56c333d8d"
+      },
+      "answerIndex": 0,
+      "_id": {
+        "$oid": "6a2b286bfaa72d77ea981ce8"
+      }
+    }
+  ],
+  "takenAt": {
+    "$date": "2026-06-11T21:28:11.573Z"
+  },
+  "__v": 1,
+  "duration": 5,
+  "endedAt": {
+    "$date": "2026-06-11T21:28:11.573Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6a2b29571951f4b142735f3f"
+  },
+  "user": {
+    "$oid": "6a2b1eaa336e3bd56c333dd3"
+  },
+  "quiz": {
+    "$oid": "6a2b1e39336e3bd56c333d82"
+  },
+  "score": 0,
+  "total": 1,
+  "startedAt": {
+    "$date": "2026-06-11T21:32:07.573Z"
+  },
+  "status": "completed",
+  "answers": [
+    {
+      "question": {
+        "$oid": "6a2b1e46336e3bd56c333d8d"
+      },
+      "answerIndex": 1,
+      "_id": {
+        "$oid": "6a2b295b1951f4b142735f4c"
+      }
+    }
+  ],
+  "takenAt": {
+    "$date": "2026-06-11T21:32:11.436Z"
+  },
+  "__v": 1,
+  "duration": 4,
+  "endedAt": {
+    "$date": "2026-06-11T21:32:11.436Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6a301b9b2cbe432ea2f82745"
+  },
+  "user": {
+    "$oid": "6a26fd292967aa4f8e6255a8"
+  },
+  "quiz": {
+    "$oid": "6a2b2aee0d01eb8c94d0da21"
+  },
+  "score": 0,
+  "total": 0,
+  "startedAt": {
+    "$date": "2026-06-15T15:34:51.847Z"
+  },
+  "status": "in-progress",
+  "answers": [],
+  "takenAt": {
+    "$date": "2026-06-15T15:34:51.859Z"
+  },
+  "__v": 0
+}]

@@ -1,0 +1,269 @@
+[{
+  "_id": {
+    "$oid": "69eb9287350ec5747661d21a"
+  },
+  "name": "Structure Programming Languages",
+  "code": "CSE 2112",
+  "enrollKey": "123456",
+  "createdBy": {
+    "$oid": "69e4968c1dc493054ed623ab"
+  },
+  "isActive": true,
+  "createdAt": {
+    "$date": "2026-04-24T15:55:51.563Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-20T05:49:56.433Z"
+  },
+  "__v": 3,
+  "enrolledUsers": [
+    {
+      "$oid": "69e49a133a3279619ab5d237"
+    },
+    {
+      "$oid": "6a0ce0696291f74a417a2077"
+    },
+    {
+      "$oid": "69e4968c1dc493054ed623ab"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "69edfbe640d207f70839f6c0"
+  },
+  "name": "Basic of UI UX",
+  "code": "CSE 1111",
+  "enrollKey": "456987",
+  "createdBy": {
+    "$oid": "69e4968c1dc493054ed623ab"
+  },
+  "isActive": true,
+  "createdAt": {
+    "$date": "2026-04-26T11:49:58.410Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-24T15:29:36.714Z"
+  },
+  "__v": 1,
+  "enrolledUsers": [
+    {
+      "$oid": "69e4968c1dc493054ed623ab"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "69eeb94ab611b49619e60156"
+  },
+  "name": "Course 3",
+  "code": "CSE 1212",
+  "enrollKey": "123456",
+  "createdBy": {
+    "$oid": "69e4968c1dc493054ed623ab"
+  },
+  "isActive": true,
+  "createdAt": {
+    "$date": "2026-04-27T01:18:02.911Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-27T01:18:02.911Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0c02060437aa5e7f3f562b"
+  },
+  "name": "New 2",
+  "code": "CSE 6768",
+  "enrollKey": "1234",
+  "createdBy": {
+    "$oid": "69e4968c1dc493054ed623ab"
+  },
+  "isActive": true,
+  "createdAt": {
+    "$date": "2026-05-19T06:24:06.686Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-19T06:24:06.686Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0c08c17d2a51ffa0455a22"
+  },
+  "name": "WEb",
+  "code": "CSE 4565",
+  "enrollKey": "46565",
+  "createdBy": {
+    "$oid": "69e4968c1dc493054ed623ab"
+  },
+  "isActive": true,
+  "createdAt": {
+    "$date": "2026-05-19T06:52:49.674Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-19T06:52:49.674Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a26fda22967aa4f8e6255d4"
+  },
+  "name": "Web Development",
+  "code": "CSE 1222",
+  "enrollKey": "1234",
+  "createdBy": {
+    "$oid": "6a26fd292967aa4f8e6255a8"
+  },
+  "enrolledUsers": [],
+  "isActive": true,
+  "createdAt": {
+    "$date": "2026-06-08T17:36:34.572Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-08T17:36:34.572Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a26fe9979d9f97b6a67ea4a"
+  },
+  "name": "Calculus",
+  "code": "MATH 1213",
+  "enrollKey": "1234",
+  "createdBy": {
+    "$oid": "6a26fd292967aa4f8e6255a8"
+  },
+  "enrolledUsers": [],
+  "isActive": true,
+  "createdAt": {
+    "$date": "2026-06-08T17:40:41.026Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-08T17:40:41.026Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a26feea6df0d629e7d52d14"
+  },
+  "name": "Machine Learning",
+  "code": "CSE 1220",
+  "enrollKey": "1234",
+  "createdBy": {
+    "$oid": "6a26fd292967aa4f8e6255a8"
+  },
+  "enrolledUsers": [],
+  "isActive": true,
+  "createdAt": {
+    "$date": "2026-06-08T17:42:02.817Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-08T17:42:02.817Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a26ffd86df0d629e7d52d5d"
+  },
+  "name": "Software Engineering",
+  "code": "CSE 1312",
+  "enrollKey": "1234",
+  "createdBy": {
+    "$oid": "6a26fd292967aa4f8e6255a8"
+  },
+  "enrolledUsers": [
+    {
+      "$oid": "6a2b21c1926f0910e149bfaa"
+    },
+    {
+      "$oid": "6a2b1eaa336e3bd56c333dd3"
+    }
+  ],
+  "isActive": true,
+  "createdAt": {
+    "$date": "2026-06-08T17:46:00.442Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-11T21:06:29.486Z"
+  },
+  "__v": 2
+},
+{
+  "_id": {
+    "$oid": "6a270bf44943aee0f9309ecf"
+  },
+  "name": "tuyuyuy",
+  "code": "79898",
+  "enrollKey": "1234",
+  "createdBy": {
+    "$oid": "6a270bba4943aee0f9309ea3"
+  },
+  "enrolledUsers": [],
+  "isActive": true,
+  "createdAt": {
+    "$date": "2026-06-08T18:37:40.586Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-08T18:37:40.586Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a271c99322de52cce5998fa"
+  },
+  "name": "wewe",
+  "code": "2323",
+  "enrollKey": "123456",
+  "enrolledUsers": [],
+  "isActive": true,
+  "createdAt": {
+    "$date": "2026-06-08T19:48:41.289Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-08T19:48:41.289Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a271e24b5bce673a385a03d"
+  },
+  "name": "wd",
+  "code": "cs 12",
+  "enrollKey": "123456",
+  "enrolledUsers": [],
+  "isActive": true,
+  "createdAt": {
+    "$date": "2026-06-08T19:55:16.236Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-08T19:55:16.236Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a271e4bb5bce673a385a05b"
+  },
+  "name": "test",
+  "code": "cs 45",
+  "enrollKey": "123456",
+  "enrolledUsers": [],
+  "isActive": true,
+  "createdAt": {
+    "$date": "2026-06-08T19:55:55.210Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-08T19:55:55.210Z"
+  },
+  "__v": 0
+}]

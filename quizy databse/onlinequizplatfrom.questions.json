@@ -1,0 +1,674 @@
+[{
+  "_id": {
+    "$oid": "69e7a121d571ffaeee1df9e1"
+  },
+  "quiz": {
+    "$oid": "69e7a0d1d571ffaeee1df9d8"
+  },
+  "text": "What is the capital city of Bangladesh?",
+  "type": "mcq",
+  "options": [
+    {
+      "text": "Dhaka",
+      "_id": {
+        "$oid": "69e7a121d571ffaeee1df9e2"
+      }
+    },
+    {
+      "text": "Dinajpur ",
+      "_id": {
+        "$oid": "69e7a121d571ffaeee1df9e3"
+      }
+    },
+    {
+      "text": "Khulna",
+      "_id": {
+        "$oid": "69e7a121d571ffaeee1df9e4"
+      }
+    },
+    {
+      "text": "Borisal",
+      "_id": {
+        "$oid": "69e7a121d571ffaeee1df9e5"
+      }
+    }
+  ],
+  "correctIndex": 0,
+  "points": 1,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69e7a147d571ffaeee1df9e8"
+  },
+  "quiz": {
+    "$oid": "69e7a0d1d571ffaeee1df9d8"
+  },
+  "text": "Are you human?",
+  "type": "tf",
+  "options": [
+    {
+      "text": "",
+      "_id": {
+        "$oid": "69e7a147d571ffaeee1df9e9"
+      }
+    },
+    {
+      "text": "",
+      "_id": {
+        "$oid": "69e7a147d571ffaeee1df9ea"
+      }
+    }
+  ],
+  "correctIndex": 1,
+  "points": 1,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69e7a173d571ffaeee1df9ed"
+  },
+  "quiz": {
+    "$oid": "69e7a0d1d571ffaeee1df9d8"
+  },
+  "text": "What is you name?",
+  "type": "short",
+  "answerText": "",
+  "points": 1,
+  "options": [],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ec59054d9965b3ff3bfc89"
+  },
+  "quiz": {
+    "$oid": "69ec58e94d9965b3ff3bfc80"
+  },
+  "text": "What is C?",
+  "type": "mcq",
+  "options": [
+    {
+      "text": "C is c",
+      "_id": {
+        "$oid": "69ec59054d9965b3ff3bfc8a"
+      }
+    },
+    {
+      "text": "C is B",
+      "_id": {
+        "$oid": "69ec59054d9965b3ff3bfc8b"
+      }
+    }
+  ],
+  "correctIndex": 0,
+  "points": 1,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ee033a61077b6531b7ff04"
+  },
+  "quiz": {
+    "$oid": "69ee032861077b6531b7fef9"
+  },
+  "text": "yes this is??",
+  "type": "mcq",
+  "options": [
+    {
+      "text": "1",
+      "_id": {
+        "$oid": "69ee033a61077b6531b7ff05"
+      }
+    },
+    {
+      "text": "2",
+      "_id": {
+        "$oid": "69ee033a61077b6531b7ff06"
+      }
+    }
+  ],
+  "correctIndex": 0,
+  "points": 1,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ee155761077b6531b7ffa4"
+  },
+  "quiz": {
+    "$oid": "69ee154f61077b6531b7ff99"
+  },
+  "text": "efw",
+  "type": "mcq",
+  "options": [
+    {
+      "text": "w",
+      "_id": {
+        "$oid": "69ee155761077b6531b7ffa5"
+      }
+    },
+    {
+      "text": "f",
+      "_id": {
+        "$oid": "69ee155761077b6531b7ffa6"
+      }
+    }
+  ],
+  "correctIndex": 0,
+  "points": 1,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69eecde016ed30418c18db6f"
+  },
+  "quiz": {
+    "$oid": "69eecdcc16ed30418c18db64"
+  },
+  "text": "d",
+  "type": "tf",
+  "options": [
+    {
+      "text": "",
+      "_id": {
+        "$oid": "69eecde016ed30418c18db70"
+      }
+    },
+    {
+      "text": "",
+      "_id": {
+        "$oid": "69eecde016ed30418c18db71"
+      }
+    }
+  ],
+  "correctIndex": 1,
+  "points": 1,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0c01e90437aa5e7f3f5613"
+  },
+  "quiz": {
+    "$oid": "6a0c01c30437aa5e7f3f5603"
+  },
+  "text": "qcqwdc`",
+  "type": "mcq",
+  "options": [
+    {
+      "text": "1ed1",
+      "_id": {
+        "$oid": "6a0c01e90437aa5e7f3f5614"
+      }
+    },
+    {
+      "text": "d1w",
+      "_id": {
+        "$oid": "6a0c01e90437aa5e7f3f5615"
+      }
+    }
+  ],
+  "correctIndex": 1,
+  "points": 1,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0c095f7d2a51ffa0455a4c"
+  },
+  "quiz": {
+    "$oid": "6a0c09047d2a51ffa0455a41"
+  },
+  "text": "1 qs",
+  "type": "mcq",
+  "options": [
+    {
+      "text": "fve",
+      "_id": {
+        "$oid": "6a0c095f7d2a51ffa0455a4d"
+      }
+    },
+    {
+      "text": "vwv",
+      "_id": {
+        "$oid": "6a0c095f7d2a51ffa0455a4e"
+      }
+    }
+  ],
+  "correctIndex": 1,
+  "points": 1,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0c096f7d2a51ffa0455a51"
+  },
+  "quiz": {
+    "$oid": "6a0c09047d2a51ffa0455a41"
+  },
+  "text": "what id",
+  "type": "short",
+  "answerText": "",
+  "points": 1,
+  "options": [],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a131a388369dec58dcd9bb5"
+  },
+  "quiz": {
+    "$oid": "6a131a2b8369dec58dcd9baa"
+  },
+  "text": "q1",
+  "type": "mcq",
+  "options": [
+    {
+      "text": "1",
+      "_id": {
+        "$oid": "6a131a388369dec58dcd9bb6"
+      }
+    },
+    {
+      "text": "2",
+      "_id": {
+        "$oid": "6a131a388369dec58dcd9bb7"
+      }
+    }
+  ],
+  "correctIndex": 0,
+  "points": 1,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a1322ae7ba2b04d5c3634b7"
+  },
+  "quiz": {
+    "$oid": "6a131a2b8369dec58dcd9baa"
+  },
+  "text": "q2",
+  "type": "mcq",
+  "options": [
+    {
+      "text": "45",
+      "_id": {
+        "$oid": "6a1322ae7ba2b04d5c3634b8"
+      }
+    },
+    {
+      "text": "56",
+      "_id": {
+        "$oid": "6a1322ae7ba2b04d5c3634b9"
+      }
+    }
+  ],
+  "correctIndex": 0,
+  "points": 1,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a27b112431e8f34bfeafd33"
+  },
+  "quiz": {
+    "$oid": "6a27b0c2431e8f34bfeafd28"
+  },
+  "text": "What is <p> used for ?",
+  "type": "mcq",
+  "options": [
+    {
+      "text": "Text",
+      "_id": {
+        "$oid": "6a27b112431e8f34bfeafd34"
+      }
+    },
+    {
+      "text": "Paragraph ",
+      "_id": {
+        "$oid": "6a27b112431e8f34bfeafd35"
+      }
+    },
+    {
+      "text": "Input From ",
+      "_id": {
+        "$oid": "6a27b112431e8f34bfeafd36"
+      }
+    }
+  ],
+  "correctIndex": 1,
+  "points": 1,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a27b131431e8f34bfeafd39"
+  },
+  "quiz": {
+    "$oid": "6a27b0c2431e8f34bfeafd28"
+  },
+  "text": "Can we use CSS in side HTML file?",
+  "type": "tf",
+  "options": [
+    {
+      "text": "",
+      "_id": {
+        "$oid": "6a27b131431e8f34bfeafd3a"
+      }
+    },
+    {
+      "text": "",
+      "_id": {
+        "$oid": "6a27b131431e8f34bfeafd3b"
+      }
+    }
+  ],
+  "correctIndex": 1,
+  "points": 1,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a2b1e46336e3bd56c333d8d"
+  },
+  "quiz": {
+    "$oid": "6a2b1e39336e3bd56c333d82"
+  },
+  "text": "1",
+  "type": "mcq",
+  "options": [
+    {
+      "text": "w",
+      "_id": {
+        "$oid": "6a2b1e46336e3bd56c333d8e"
+      }
+    },
+    {
+      "text": "e",
+      "_id": {
+        "$oid": "6a2b1e46336e3bd56c333d8f"
+      }
+    }
+  ],
+  "correctIndex": 0,
+  "points": 1,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a2b2aee0d01eb8c94d0da26"
+  },
+  "quiz": {
+    "$oid": "6a2b2aee0d01eb8c94d0da21"
+  },
+  "text": "1",
+  "type": "mcq",
+  "options": [
+    {
+      "text": "w",
+      "_id": {
+        "$oid": "6a2b1e46336e3bd56c333d8e"
+      }
+    },
+    {
+      "text": "e",
+      "_id": {
+        "$oid": "6a2b1e46336e3bd56c333d8f"
+      }
+    }
+  ],
+  "correctIndex": 0,
+  "points": 1,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a301ccd63ffcb0bb88e52ee"
+  },
+  "quiz": {
+    "$oid": "6a301ccd63ffcb0bb88e52e6"
+  },
+  "text": "What is <p> used for ?",
+  "type": "mcq",
+  "options": [
+    {
+      "text": "Text",
+      "_id": {
+        "$oid": "6a27b112431e8f34bfeafd34"
+      }
+    },
+    {
+      "text": "Paragraph ",
+      "_id": {
+        "$oid": "6a27b112431e8f34bfeafd35"
+      }
+    },
+    {
+      "text": "Input From ",
+      "_id": {
+        "$oid": "6a27b112431e8f34bfeafd36"
+      }
+    }
+  ],
+  "correctIndex": 1,
+  "points": 1,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a301ccd63ffcb0bb88e52f2"
+  },
+  "quiz": {
+    "$oid": "6a301ccd63ffcb0bb88e52e6"
+  },
+  "text": "Can we use CSS in side HTML file?",
+  "type": "tf",
+  "options": [
+    {
+      "text": "",
+      "_id": {
+        "$oid": "6a27b131431e8f34bfeafd3a"
+      }
+    },
+    {
+      "text": "",
+      "_id": {
+        "$oid": "6a27b131431e8f34bfeafd3b"
+      }
+    }
+  ],
+  "correctIndex": 1,
+  "points": 1,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a301e6263ffcb0bb88e533d"
+  },
+  "quiz": {
+    "$oid": "6a301e5963ffcb0bb88e5332"
+  },
+  "text": "12",
+  "type": "mcq",
+  "options": [
+    {
+      "text": "12",
+      "_id": {
+        "$oid": "6a301e6263ffcb0bb88e533e"
+      }
+    },
+    {
+      "text": "12",
+      "_id": {
+        "$oid": "6a301e6263ffcb0bb88e533f"
+      }
+    }
+  ],
+  "correctIndex": 1,
+  "points": 1,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a30260a20b9575731d77509"
+  },
+  "quiz": {
+    "$oid": "6a3025fe20b9575731d774fe"
+  },
+  "text": "111",
+  "type": "mcq",
+  "options": [
+    {
+      "text": "1",
+      "_id": {
+        "$oid": "6a30260a20b9575731d7750a"
+      }
+    },
+    {
+      "text": "1",
+      "_id": {
+        "$oid": "6a30260a20b9575731d7750b"
+      }
+    }
+  ],
+  "correctIndex": 0,
+  "points": 1,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a302a66544ae9a37d945008"
+  },
+  "quiz": {
+    "$oid": "6a302a5c544ae9a37d944ffd"
+  },
+  "text": "hi",
+  "type": "mcq",
+  "options": [
+    {
+      "text": "gu",
+      "_id": {
+        "$oid": "6a302a66544ae9a37d945009"
+      }
+    },
+    {
+      "text": "iojo",
+      "_id": {
+        "$oid": "6a302a66544ae9a37d94500a"
+      }
+    }
+  ],
+  "correctIndex": 0,
+  "points": 1,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a302a97544ae9a37d945041"
+  },
+  "quiz": {
+    "$oid": "6a302a85544ae9a37d945036"
+  },
+  "text": "rt",
+  "type": "mcq",
+  "options": [
+    {
+      "text": "46",
+      "_id": {
+        "$oid": "6a302a97544ae9a37d945042"
+      }
+    },
+    {
+      "text": "456",
+      "_id": {
+        "$oid": "6a302a97544ae9a37d945043"
+      }
+    }
+  ],
+  "correctIndex": 0,
+  "points": 1,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a302aa7544ae9a37d945046"
+  },
+  "quiz": {
+    "$oid": "6a302a85544ae9a37d945036"
+  },
+  "text": "no",
+  "type": "mcq",
+  "options": [
+    {
+      "text": "ojopkp",
+      "_id": {
+        "$oid": "6a302aa7544ae9a37d945047"
+      }
+    },
+    {
+      "text": "nkmn",
+      "_id": {
+        "$oid": "6a302aa7544ae9a37d945048"
+      }
+    }
+  ],
+  "correctIndex": 0,
+  "points": 1,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a302bd2544ae9a37d9450a8"
+  },
+  "quiz": {
+    "$oid": "6a2b1e39336e3bd56c333d82"
+  },
+  "text": "23",
+  "type": "mcq",
+  "options": [
+    {
+      "text": "23",
+      "_id": {
+        "$oid": "6a302bd2544ae9a37d9450a9"
+      }
+    },
+    {
+      "text": "23",
+      "_id": {
+        "$oid": "6a302bd2544ae9a37d9450aa"
+      }
+    }
+  ],
+  "correctIndex": 1,
+  "points": 1,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a302dc1af10b730eb2a26b8"
+  },
+  "quiz": {
+    "$oid": "6a2b1e39336e3bd56c333d82"
+  },
+  "text": "er",
+  "type": "mcq",
+  "options": [
+    {
+      "text": "re",
+      "_id": {
+        "$oid": "6a302dc1af10b730eb2a26b9"
+      }
+    },
+    {
+      "text": "rr",
+      "_id": {
+        "$oid": "6a302dc1af10b730eb2a26ba"
+      }
+    }
+  ],
+  "correctIndex": 0,
+  "points": 1,
+  "extraTime": 50,
+  "__v": 0
+}]

@@ -1,0 +1,168 @@
+[{
+  "_id": {
+    "$oid": "6a26fd292967aa4f8e6255a8"
+  },
+  "name": "Rafid Nahiyan Farabi",
+  "identifier": "0112230992",
+  "email": "fahimfaysal97531@gmail.com",
+  "password": "$2a$12$8fAMJObXRa5Vsz3IllwqGuYa9gSbGUIJbEm1RkArCjYJg55BWwHii",
+  "role": "teacher",
+  "institution": "United International University",
+  "isActive": true,
+  "isVerified": true,
+  "createdAt": {
+    "$date": "2026-06-08T17:34:33.043Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-08T17:35:22.043Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a270bba4943aee0f9309ea3"
+  },
+  "name": "Rubait Ahmed Shouve",
+  "identifier": "2345667",
+  "email": "mshouvee2310067@bscse.uiu.ac.bd",
+  "password": "$2a$12$GcRltu6wKmmezKE4pK/PROdm1sy7GgSoGeAsnPczW8hVILFGxj8oS",
+  "role": "teacher",
+  "institution": "United International University",
+  "isActive": true,
+  "isVerified": true,
+  "createdAt": {
+    "$date": "2026-06-08T18:36:42.542Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-08T18:37:21.919Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a2b1eaa336e3bd56c333dd3"
+  },
+  "name": "Fahim Faysal",
+  "identifier": "0112230224",
+  "email": "fahimbafu@gmail.com",
+  "password": "$2a$12$Q./9e0Xk8Js5cFE1gOryWeIW62/bC5SWSukz5MVkr15jhTZ44oXrC",
+  "role": "student",
+  "institution": "United International University",
+  "isActive": true,
+  "isVerified": false,
+  "emailVerificationCode": "08734bcf70050883177fc022e9549325726d572d1ab03373bdf29e451fd6dc0d",
+  "emailVerificationExpires": {
+    "$date": "2026-06-11T21:01:34.824Z"
+  },
+  "createdAt": {
+    "$date": "2026-06-11T20:46:34.828Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T13:38:18.529Z"
+  },
+  "__v": 0,
+  "passwordResetCode": "3092c77d909173d0e7dadb588a2b98ebf40a278a61b6e34302ce784fdb1d7098",
+  "passwordResetExpires": {
+    "$date": "2026-06-15T13:53:18.528Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6a2b21c1926f0910e149bfaa"
+  },
+  "name": "Dev User",
+  "identifier": "dev",
+  "email": "dev@local",
+  "password": "$2a$12$ER9gS4sJfeRAml4hYodXDOQbL7Jzj8h9cCWZe3VJwstS2c8qwR1Dy",
+  "role": "teacher",
+  "institution": "local",
+  "isActive": true,
+  "isVerified": true,
+  "createdAt": {
+    "$date": "2026-06-11T20:59:45.419Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-11T20:59:45.419Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a2f9aff2fff623a53eae7a9"
+  },
+  "name": "mfaysal223224@bscse.uiu.ac.bd",
+  "identifier": "mfaysal223224",
+  "email": "mfaysal223224@bscse.uiu.ac.bd",
+  "password": "$2a$12$ZOjxfufKQupB7bLTqzO6PeMuRg84FmLFAlUYo53NQvm58qxmrX2hK",
+  "role": "student",
+  "institution": "local",
+  "isActive": true,
+  "isVerified": true,
+  "createdAt": {
+    "$date": "2026-06-15T06:26:07.869Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T06:26:07.869Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a2f9b112fff623a53eae7cc"
+  },
+  "name": "mabdullah2230992@bscse.uiu.ac.bd",
+  "identifier": "mabdullah2230992",
+  "email": "mabdullah2230992@bscse.uiu.ac.bd",
+  "password": "$2a$12$UfxTMi6AMdf7LpZ7kFIynehyJugWx795dz1lPukjp8fPr6IFHwuG6",
+  "role": "student",
+  "institution": "local",
+  "isActive": true,
+  "isVerified": true,
+  "createdAt": {
+    "$date": "2026-06-15T06:26:25.002Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T06:26:25.002Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a2f9b2d2fff623a53eae7ef"
+  },
+  "name": "fa@gmail.com",
+  "identifier": "fa",
+  "email": "fa@gmail.com",
+  "password": "$2a$12$/B06wKNK8Sdq6gngidLAA.l8cnm6o/TI0Rl8kwYlCRslnTmNISz9i",
+  "role": "student",
+  "institution": "local",
+  "isActive": true,
+  "isVerified": true,
+  "createdAt": {
+    "$date": "2026-06-15T06:26:53.076Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T06:26:53.076Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a2ff63ae240965e0094debb"
+  },
+  "name": "12",
+  "identifier": "12",
+  "email": "12@local",
+  "password": "$2a$12$sYjT3zQvPFjBFVw3ezppz.n4SINLc5jMABg8viCH81IF6aAYDFNNm",
+  "role": "student",
+  "institution": "local",
+  "isActive": true,
+  "isVerified": true,
+  "createdAt": {
+    "$date": "2026-06-15T12:55:22.506Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-15T12:55:22.506Z"
+  },
+  "__v": 0
+}]

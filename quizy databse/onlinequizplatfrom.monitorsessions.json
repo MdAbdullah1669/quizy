@@ -1,0 +1,30 @@
+[{
+  "_id": {
+    "$oid": "69eec04bb2ea1532babca7a4"
+  },
+  "quiz": {
+    "$oid": "69eec034b2ea1532babca77e"
+  },
+  "isPaused": false,
+  "isEnded": true,
+  "announcements": [],
+  "updatedAt": {
+    "$date": "2026-04-27T01:47:57.053Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a1323ec7ba2b04d5c363597"
+  },
+  "quiz": {
+    "$oid": "6a131a2b8369dec58dcd9baa"
+  },
+  "isPaused": true,
+  "isEnded": false,
+  "announcements": [],
+  "updatedAt": {
+    "$date": "2026-05-24T16:14:36.367Z"
+  },
+  "__v": 0
+}]

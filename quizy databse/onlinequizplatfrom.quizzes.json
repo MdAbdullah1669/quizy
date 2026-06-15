@@ -1,0 +1,537 @@
+[{
+  "_id": {
+    "$oid": "69e7a0d1d571ffaeee1df9d8"
+  },
+  "title": "Test Quiz !",
+  "description": "This is the first quiz in the system",
+  "timeLimit": 20,
+  "rules": "",
+  "joinCode": "291431",
+  "isActive": true,
+  "attemptsAllowed": "single",
+  "shuffleQuestions": false,
+  "showAnswersAfterSubmission": false,
+  "access": "public",
+  "allowedList": [],
+  "status": "draft",
+  "createdAt": {
+    "$date": "2026-04-21T16:07:45.120Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ec58e94d9965b3ff3bfc80"
+  },
+  "title": "Basic of C",
+  "subject": {
+    "$oid": "69eb9287350ec5747661d21a"
+  },
+  "description": "Open test.",
+  "timeLimit": 0,
+  "rules": "",
+  "joinCode": "637710",
+  "isActive": true,
+  "attemptsAllowed": "single",
+  "shuffleQuestions": false,
+  "showAnswersAfterSubmission": false,
+  "access": "public",
+  "allowedList": [],
+  "status": "draft",
+  "createdAt": {
+    "$date": "2026-04-25T06:02:17.211Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ee032861077b6531b7fef9"
+  },
+  "title": "Test 2",
+  "subject": {
+    "$oid": "69eb9287350ec5747661d21a"
+  },
+  "createdBy": {
+    "$oid": "69e4968c1dc493054ed623ab"
+  },
+  "description": "This is testing quiz",
+  "timeLimit": 20,
+  "rules": "",
+  "visibleFrom": {
+    "$date": "2026-04-26T17:12:00.000Z"
+  },
+  "startFrom": {
+    "$date": "2026-11-26T21:18:00.000Z"
+  },
+  "joinCode": "921384",
+  "isActive": true,
+  "attemptsAllowed": "single",
+  "shuffleQuestions": false,
+  "showAnswersAfterSubmission": false,
+  "access": "public",
+  "allowedList": [],
+  "status": "draft",
+  "createdAt": {
+    "$date": "2026-04-26T12:20:56.784Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ee154f61077b6531b7ff99"
+  },
+  "title": "x",
+  "subject": {
+    "$oid": "69edfbe640d207f70839f6c0"
+  },
+  "createdBy": {
+    "$oid": "69e4968c1dc493054ed623ab"
+  },
+  "description": "e",
+  "timeLimit": 0,
+  "rules": "",
+  "joinCode": "368987",
+  "isActive": true,
+  "attemptsAllowed": "single",
+  "shuffleQuestions": false,
+  "showAnswersAfterSubmission": false,
+  "access": "public",
+  "allowedList": [],
+  "status": "draft",
+  "createdAt": {
+    "$date": "2026-04-26T13:38:23.007Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69eec034b2ea1532babca77e"
+  },
+  "title": "z",
+  "subject": {
+    "$oid": "69eeb94ab611b49619e60156"
+  },
+  "createdBy": {
+    "$oid": "69e4968c1dc493054ed623ab"
+  },
+  "description": "hi",
+  "timeLimit": 10,
+  "rules": "",
+  "joinCode": "155945",
+  "isActive": true,
+  "attemptsAllowed": "single",
+  "shuffleQuestions": false,
+  "showAnswersAfterSubmission": false,
+  "access": "public",
+  "allowedList": [],
+  "status": "draft",
+  "createdAt": {
+    "$date": "2026-04-27T01:47:32.259Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69eecdcc16ed30418c18db64"
+  },
+  "title": "4",
+  "subject": {
+    "$oid": "69eeb94ab611b49619e60156"
+  },
+  "createdBy": {
+    "$oid": "69e4968c1dc493054ed623ab"
+  },
+  "description": "4",
+  "timeLimit": 4,
+  "rules": "",
+  "joinCode": "195484",
+  "isActive": true,
+  "attemptsAllowed": "single",
+  "shuffleQuestions": false,
+  "showAnswersAfterSubmission": false,
+  "access": "public",
+  "allowedList": [],
+  "status": "draft",
+  "createdAt": {
+    "$date": "2026-04-27T02:45:32.903Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0c01c30437aa5e7f3f5603"
+  },
+  "title": "dqw",
+  "subject": {
+    "$oid": "69edfbe640d207f70839f6c0"
+  },
+  "createdBy": {
+    "$oid": "69e4968c1dc493054ed623ab"
+  },
+  "description": "qdqwmdpi",
+  "timeLimit": 20,
+  "rules": "",
+  "joinCode": "911594",
+  "isActive": true,
+  "attemptsAllowed": "single",
+  "shuffleQuestions": false,
+  "showAnswersAfterSubmission": false,
+  "access": "public",
+  "allowedList": [],
+  "status": "draft",
+  "createdAt": {
+    "$date": "2026-05-19T06:22:59.820Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0c09047d2a51ffa0455a41"
+  },
+  "title": "HUHU",
+  "subject": {
+    "$oid": "6a0c08c17d2a51ffa0455a22"
+  },
+  "createdBy": {
+    "$oid": "69e4968c1dc493054ed623ab"
+  },
+  "description": "hihih",
+  "timeLimit": 20,
+  "rules": "",
+  "joinCode": "814380",
+  "isActive": true,
+  "attemptsAllowed": "multiple",
+  "shuffleQuestions": false,
+  "showAnswersAfterSubmission": false,
+  "access": "public",
+  "allowedList": [],
+  "status": "draft",
+  "createdAt": {
+    "$date": "2026-05-19T06:53:56.920Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a131a2b8369dec58dcd9baa"
+  },
+  "title": "Q1",
+  "subject": {
+    "$oid": "69eb9287350ec5747661d21a"
+  },
+  "createdBy": {
+    "$oid": "69e4968c1dc493054ed623ab"
+  },
+  "description": "This is Q1",
+  "timeLimit": 20,
+  "rules": "",
+  "visibleFrom": {
+    "$date": "2026-05-25T01:12:00.000Z"
+  },
+  "startFrom": {
+    "$date": "2026-05-20T19:20:00.000Z"
+  },
+  "joinCode": "548532",
+  "isActive": true,
+  "attemptsAllowed": "single",
+  "shuffleQuestions": false,
+  "showAnswersAfterSubmission": false,
+  "access": "public",
+  "allowedList": [],
+  "status": "draft",
+  "createdAt": {
+    "$date": "2026-05-24T15:32:59.103Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a27b0c2431e8f34bfeafd28"
+  },
+  "title": "HTML",
+  "subject": {
+    "$oid": "6a26fda22967aa4f8e6255d4"
+  },
+  "createdBy": {
+    "$oid": "6a26fd292967aa4f8e6255a8"
+  },
+  "description": "Ans precisely.",
+  "timeLimit": 4,
+  "rules": "",
+  "joinCode": "505258",
+  "isActive": false,
+  "attemptsAllowed": "single",
+  "shuffleQuestions": false,
+  "showAnswersAfterSubmission": false,
+  "access": "public",
+  "allowedList": [],
+  "status": "draft",
+  "createdAt": {
+    "$date": "2026-06-09T06:20:50.087Z"
+  },
+  "__v": 0,
+  "deletedAt": {
+    "$date": "2026-06-15T15:40:20.014Z"
+  },
+  "deletedBy": {
+    "$oid": "6a26fd292967aa4f8e6255a8"
+  }
+},
+{
+  "_id": {
+    "$oid": "6a2b1e39336e3bd56c333d82"
+  },
+  "title": "test",
+  "subject": {
+    "$oid": "6a26ffd86df0d629e7d52d5d"
+  },
+  "createdBy": {
+    "$oid": "6a26fd292967aa4f8e6255a8"
+  },
+  "description": "ss",
+  "timeLimit": 290,
+  "rules": "",
+  "joinCode": "870050",
+  "isActive": true,
+  "attemptsAllowed": "single",
+  "shuffleQuestions": false,
+  "showAnswersAfterSubmission": false,
+  "access": "public",
+  "allowedList": [],
+  "status": "draft",
+  "createdAt": {
+    "$date": "2026-06-11T20:44:41.213Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a2b2aee0d01eb8c94d0da21"
+  },
+  "title": "test (copy)",
+  "subject": {
+    "$oid": "6a26ffd86df0d629e7d52d5d"
+  },
+  "createdBy": {
+    "$oid": "6a26fd292967aa4f8e6255a8"
+  },
+  "description": "ss",
+  "timeLimit": 300,
+  "rules": "",
+  "joinCode": "655625",
+  "isActive": false,
+  "attemptsAllowed": "single",
+  "shuffleQuestions": false,
+  "showAnswersAfterSubmission": false,
+  "access": "public",
+  "allowedList": [],
+  "status": "draft",
+  "createdAt": {
+    "$date": "2026-06-11T21:38:54.486Z"
+  },
+  "__v": 0,
+  "deletedAt": {
+    "$date": "2026-06-15T15:52:39.138Z"
+  },
+  "deletedBy": {
+    "$oid": "6a26fd292967aa4f8e6255a8"
+  }
+},
+{
+  "_id": {
+    "$oid": "6a301ccd63ffcb0bb88e52e6"
+  },
+  "title": "HTML (copy)",
+  "subject": {
+    "$oid": "6a26fda22967aa4f8e6255d4"
+  },
+  "createdBy": {
+    "$oid": "6a26fd292967aa4f8e6255a8"
+  },
+  "description": "Ans precisely.",
+  "timeLimit": 4,
+  "rules": "",
+  "joinCode": "978558",
+  "isActive": false,
+  "attemptsAllowed": "single",
+  "shuffleQuestions": false,
+  "showAnswersAfterSubmission": false,
+  "access": "public",
+  "allowedList": [],
+  "status": "draft",
+  "createdAt": {
+    "$date": "2026-06-15T15:39:57.035Z"
+  },
+  "__v": 0,
+  "deletedAt": {
+    "$date": "2026-06-15T15:55:11.815Z"
+  },
+  "deletedBy": {
+    "$oid": "6a26fd292967aa4f8e6255a8"
+  }
+},
+{
+  "_id": {
+    "$oid": "6a301e5963ffcb0bb88e5332"
+  },
+  "title": "1",
+  "subject": {
+    "$oid": "6a26fe9979d9f97b6a67ea4a"
+  },
+  "createdBy": {
+    "$oid": "6a26fd292967aa4f8e6255a8"
+  },
+  "description": "12",
+  "timeLimit": 540,
+  "rules": "",
+  "joinCode": "707972",
+  "isActive": false,
+  "attemptsAllowed": "single",
+  "shuffleQuestions": false,
+  "showAnswersAfterSubmission": false,
+  "access": "public",
+  "allowedList": [],
+  "status": "draft",
+  "createdAt": {
+    "$date": "2026-06-15T15:46:33.313Z"
+  },
+  "__v": 0,
+  "deletedAt": {
+    "$date": "2026-06-15T15:55:05.500Z"
+  },
+  "deletedBy": {
+    "$oid": "6a26fd292967aa4f8e6255a8"
+  }
+},
+{
+  "_id": {
+    "$oid": "6a3025fe20b9575731d774fe"
+  },
+  "title": "1",
+  "subject": {
+    "$oid": "6a26feea6df0d629e7d52d14"
+  },
+  "createdBy": {
+    "$oid": "6a26fd292967aa4f8e6255a8"
+  },
+  "description": "11",
+  "timeLimit": 660,
+  "rules": "",
+  "joinCode": "613053",
+  "isActive": false,
+  "attemptsAllowed": "single",
+  "shuffleQuestions": false,
+  "showAnswersAfterSubmission": false,
+  "access": "public",
+  "allowedList": [],
+  "status": "draft",
+  "createdAt": {
+    "$date": "2026-06-15T16:19:10.613Z"
+  },
+  "__v": 0,
+  "deletedAt": {
+    "$date": "2026-06-15T16:20:05.502Z"
+  },
+  "deletedBy": {
+    "$oid": "6a26fd292967aa4f8e6255a8"
+  }
+},
+{
+  "_id": {
+    "$oid": "6a302a5c544ae9a37d944ffd"
+  },
+  "title": "11",
+  "subject": {
+    "$oid": "6a26ffd86df0d629e7d52d5d"
+  },
+  "createdBy": {
+    "$oid": "6a26fd292967aa4f8e6255a8"
+  },
+  "description": "hih",
+  "timeLimit": 240,
+  "rules": "",
+  "joinCode": "448560",
+  "isActive": false,
+  "attemptsAllowed": "single",
+  "shuffleQuestions": false,
+  "showAnswersAfterSubmission": false,
+  "access": "public",
+  "allowedList": [],
+  "status": "draft",
+  "createdAt": {
+    "$date": "2026-06-15T16:37:48.948Z"
+  },
+  "__v": 0,
+  "deletedAt": {
+    "$date": "2026-06-15T16:38:05.811Z"
+  },
+  "deletedBy": {
+    "$oid": "6a26fd292967aa4f8e6255a8"
+  }
+},
+{
+  "_id": {
+    "$oid": "6a302a85544ae9a37d945036"
+  },
+  "title": "test",
+  "subject": {
+    "$oid": "6a26ffd86df0d629e7d52d5d"
+  },
+  "createdBy": {
+    "$oid": "6a26fd292967aa4f8e6255a8"
+  },
+  "description": "ss",
+  "timeLimit": 300,
+  "rules": "",
+  "joinCode": "537193",
+  "isActive": false,
+  "attemptsAllowed": "single",
+  "shuffleQuestions": false,
+  "showAnswersAfterSubmission": false,
+  "access": "public",
+  "allowedList": [],
+  "status": "draft",
+  "createdAt": {
+    "$date": "2026-06-15T16:38:29.628Z"
+  },
+  "__v": 0,
+  "deletedAt": {
+    "$date": "2026-06-15T16:47:41.708Z"
+  },
+  "deletedBy": {
+    "$oid": "6a26fd292967aa4f8e6255a8"
+  }
+},
+{
+  "_id": {
+    "$oid": "6a302aae544ae9a37d94505d"
+  },
+  "title": "test",
+  "subject": {
+    "$oid": "6a26ffd86df0d629e7d52d5d"
+  },
+  "createdBy": {
+    "$oid": "6a26fd292967aa4f8e6255a8"
+  },
+  "description": "ss",
+  "timeLimit": 300,
+  "rules": "",
+  "joinCode": "688015",
+  "isActive": false,
+  "attemptsAllowed": "single",
+  "shuffleQuestions": false,
+  "showAnswersAfterSubmission": false,
+  "access": "public",
+  "allowedList": [],
+  "status": "draft",
+  "createdAt": {
+    "$date": "2026-06-15T16:39:10.254Z"
+  },
+  "__v": 0,
+  "deletedAt": {
+    "$date": "2026-06-15T16:47:38.652Z"
+  },
+  "deletedBy": {
+    "$oid": "6a26fd292967aa4f8e6255a8"
+  }
+}]
