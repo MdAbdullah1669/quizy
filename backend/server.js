@@ -35,11 +35,14 @@ const colors = {
 // Security Middleware
 app.use(helmet());
 app.use(mongoSanitize());
-// CORS: allow development origins (localhost and 127.0.0.1) and echo the origin for credentialed requests
+// CORS: allow development origins (localhost and 127.0.0.1), Netlify frontend,
+// and echo the origin for credentialed requests. You can override via CLIENT_URL.
+const NETLIFY_URL = "https://quizy-online-quize-platfrom.netlify.app";
 const CLIENT_URL = process.env.CLIENT_URL || "http://localhost:5173";
 const allowedOrigins = new Set([
   CLIENT_URL,
   CLIENT_URL.replace("localhost", "127.0.0.1"),
+  NETLIFY_URL,
 ]);
 const corsOptions = {
   origin: (origin, cb) => {
