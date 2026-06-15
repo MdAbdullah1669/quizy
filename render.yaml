@@ -1,31 +1,31 @@
-services:
-  - type: web
-    name: quizy-backend
-    env: node
-    plan: free
-    branch: main
-    region: oregon
-    rootDirectory: backend
-    buildCommand: npm install
-    startCommand: npm start
-    healthCheckPath: /health
-    autoDeploy: true
-    # Environment variables: DO NOT store real secrets in this file.
-    # Set secret values in the Render dashboard (Service → Environment).
-    envVars:
-      - key: MONGODB_URI
-        value: ""
-      - key: JWT_SECRET
-        value: ""
-      - key: NODE_ENV
-        value: production
-      - key: CLIENT_URL
-        value: https://quizy-online-quize-platfrom.netlify.app
-      - key: EMAIL_HOST
-        value: ""
-      - key: EMAIL_USER
-        value: ""
-      - key: EMAIL_PASS
-        value: ""
-      - key: EMAIL_FROM
-        value: "Quizy <no-reply@example.com>"
+# services:
+#   - type: web
+#     name: quizy-backend
+#     env: node
+#     plan: free
+#     branch: main
+#     region: oregon
+#     rootDirectory: backend
+#     buildCommand: npm install
+#     startCommand: npm start
+#     healthCheckPath: /health
+#     autoDeploy: true
+#     # Environment variables: DO NOT store real secrets in this file.
+#     # Set secret values in the Render dashboard (Service → Environment).
+#     envVars:
+#       # - key: MONGODB_URI
+#         value: ""
+#       - key: JWT_SECRET
+#         value: ""
+#       - key: NODE_ENV
+#         value: production
+#       - key: CLIENT_URL
+#         value: https://quizy-online-quize-platfrom.netlify.app
+#       - key: EMAIL_HOST
+#         value: ""
+#       - key: EMAIL_USER
+#         value: ""
+#       - key: EMAIL_PASS
+#         value: ""
+#       - key: EMAIL_FROM
+#         value: "Quizy <no-reply@example.com>"
