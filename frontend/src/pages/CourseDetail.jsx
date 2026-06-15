@@ -296,14 +296,7 @@ export default function CourseDetail() {
                                 >
                                   Manage
                                 </button>
-                                <button
-                                  onClick={() =>
-                                    navigate(`/teacher/monitor/${q._id}`)
-                                  }
-                                  className="px-3 py-1 bg-green-600 text-white rounded-md text-sm"
-                                >
-                                  Monitor
-                                </button>
+                                {/* Monitor button removed as requested */}
                               </>
                             ) : takenResults[String(q._id)] ? (
                               <button
