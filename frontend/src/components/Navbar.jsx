@@ -247,7 +247,7 @@ const Navbar = () => {
                   <Link
                     key={g.to}
                     to={g.to}
-                    className={`px-4 py-2 text-base font-medium text-black hover:text-gray-700 ${
+                    className={`px-3 py-2 text-sm font-medium text-black hover:text-gray-700 ${
                       isActive ? "border-b-2 border-black" : ""
                     }`}
                   >
@@ -431,7 +431,7 @@ const Navbar = () => {
                           key={g.to}
                           to={g.to}
                           onClick={() => setIsOpen(false)}
-                          className={`block px-3 py-2 text-base text-black text-center ${
+                          className={`block px-3 py-2 text-sm text-black text-center ${
                             isActive ? "border-b-2 border-black" : ""
                           }`}
                         >
